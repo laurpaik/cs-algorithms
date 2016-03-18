@@ -49,14 +49,14 @@ and Robin has agreed to make it for me. The problem is, he doesn't know how.
 Assuming an otherwise-adult set of knowledge, how might we tell Robin to make me
 a sandwich?
 
-> 1. Go to the 12th floor
-> 1. Go to the kitchen
-> 1. Find the bread, toaster, utensils, peanut butter, and jelly
-> 1. Toast the bread
-> 1. Using a knife or spoon, spread one slice of toast with peanut butter
-> 1. Spread the other slice of toast with jelly
-> 1. Place the two pieces of bread together
-> 1. Return to me with the sandwhich
+> 1.  Go to the 12th floor
+> 1.  Go to the kitchen
+> 1.  Find the bread, toaster, utensils, peanut butter, and jelly
+> 1.  Toast the bread
+> 1.  Using a knife or spoon, spread one slice of toast with peanut butter
+> 1.  Spread the other slice of toast with jelly
+> 1.  Place the two pieces of bread together
+> 1.  Return to me with the sandwhich
 
 If Robin needed to make sandwiches for all of us, how would he do that? What's
 the "easy" or naïve way to obtain many sandwiches? What is a more effiecent way?
