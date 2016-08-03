@@ -59,7 +59,7 @@ a sandwich?
 > 1.  Return to me with the sandwhich
 
 If Robin needed to make sandwiches for all of us, how would he do that? What's
-the "easy" or naïve way to obtain many sandwiches? What is a more effiecent way?
+the "easy" or naïve way to obtain many sandwiches? What is a more efficient way?
 
 ### Lab: Outline an Algorithm
 
