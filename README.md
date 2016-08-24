@@ -15,7 +15,7 @@ introductory computer science (CS). First, classic problems allow us to practice
 our problem solving skills; in fact, most of our lesson today can be completed
 without coding. Second, being familiar with the tradeoffs inherent in choosing
 an algorithm or a data structure have direct parallels in choices you make
-writing your application code. Lastly, ome of your colleagues will have CS
+writing your application code. Lastly, some of your colleagues will have CS
 degrees, and being able to understand the jargon and figures of speech they use
 will help you communicate with them. Perhaps most importantly, these colleagues
 will probably have a say in hiring you! Nearly every technical interview touches
@@ -59,7 +59,7 @@ a sandwich?
 > 1.  Return to me with the sandwhich
 
 If Robin needed to make sandwiches for all of us, how would he do that? What's
-the "easy" or naïve way to obtain many sandwiches? What is a more effiecent way?
+the "easy" or naïve way to obtain many sandwiches? What is a more efficient way?
 
 ### Lab: Outline an Algorithm
 
