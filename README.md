@@ -204,6 +204,7 @@ one-hundred.
 -   [Fibonacci sequence - Rosetta Code](http://rosettacode.org/wiki/Fibonacci_sequence#Recursive_51)
 -   [Bubble-sort with Hungarian ("Csángó") folk dance - YouTube](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 -   [Quick-sort with Hungarian (Küküllőmenti legényes) folk dance - YouTube](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+-   [CS50's Sort lesson](https://youtu.be/IEOO5UToo6A?list=PLhQjrBD2T383Xfn0zECHrOTpfOSlptPAB&t=1109)
 
 ## [License](LICENSE)
 
