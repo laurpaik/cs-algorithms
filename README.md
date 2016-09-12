@@ -76,13 +76,15 @@ the deck, but to kill time while doing it?
 ## Sorting
 
 A well-known problem in computer science is sorting an array. There are many
-strategies (read: algorithms) for accomplishing this. Here is an abbreviated
+strategies (read: algorithms) for accomplishing this. Here is an incomplete
 list:
 
 -   Bubble sort
 -   Quick sort
 -   Merge sort
 -   Insertion sort
+-   Selection sort
+-   Heap sort
 
 This illustrates something important about algorithms: you nearly always have a
 choice. There is no "one way" to solve a problem, no "right" way. Different
@@ -93,14 +95,20 @@ up to you to consider the options and pick the one that best meets your needs.
 
 Work with a partner to read the [pseudocode](http://rosettacode.org/wiki/Sorting_algorithms/Quicksort) and [ruby](http://rosettacode.org/wiki/Sorting_algorithms/Quicksort#Ruby) implementations of quick sort. One of you will be asked to explain quick sort in your own words.
 
-### Lab: Visualize an Algorithm
+### Lab: Visualize an Algorithm or two
 
-Visualize quick sort with six volunteers holding number cards.
+Let's visualize both selection sort and insertion sort with six volunteers
+holding cards.
 
 ## Big-O (Asymptotic Analysis)
 
 We use "Big-O" notation to describe an algorithm's complexity. Complexity
-measures how time and memory scale with input. We will focus on time-complexity.
+measures how time needed and space required scale with input. A common
+optimization technique is to trade increased space complexity for reduced time
+complexity (and less commonly vice versa).
+
+**Question:** Why do we focus on time-complexity?
+
 Take a simple algorithm for demonstration purposes: printing an element of an
 array to the screen.
 
@@ -110,12 +118,12 @@ array to the screen.
 end
 ```
 
-This procedure iterates through an array (an implicit loop) and prints each
-element to the screen. In this example, the loop involves three steps. If
-instead the array had five elements, the loop would require five steps to
-complete. We say that this procedure has linear time-complexity: the
-time-to-complete grows in lock-step with the number of inputs, denoted
-`O(n)` and pronounced "O of n" or simply "linear".
+This procedure iterates through an array and prints each element to the screen.
+This example has three steps. If the array had five elements, five steps would
+be require to print all the elements complete. We say that this procedure has
+linear time-complexity: the time-to-complete grows in lock-step with the number
+of elements.  This is denoted `O(n)` and pronounced "Big o of n", "O of n", or
+simply "linear".
 
 To identify an algorithm's complexity, we focus on the "family" of scaling
 functions the algorithm belongs to. We don't care about exact values. For
@@ -131,12 +139,12 @@ end
 This procedure prints two lines to the screen on each iteration, for a total of
 six lines. If we had a five-item array, it would print ten items to the screen.
 You might be tempted to say this algorithm has complexity `O(2n)`. But, `y =
-2n` is still a linear function, so it is more approriate to say that this
+2n` is still a linear function, so it is more appropriate to say that this
 procedure is linear (`O(n)`).
 
 Another way of saying we care about the "family" of scaling functions is to say
-we care about the shape of the scaling function for an alogithm. In both of the
-previous examples, graphing input (`n`) against completion time yields a
+we care about the shape of the scaling function for an algorithm. In both of the
+previous examples, graphing elements (`n`) against completion time yields a
 straight line, hence we say that the procedures scale linearly.
 
 ### Lab: Study Big-O Families
