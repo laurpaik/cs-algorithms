@@ -160,31 +160,40 @@ features to help us characterize it.
     branch
 
 Here's a party trick that is sure to make you popular. Bet someone you can state
-with certainty a number they've chosen, between one and ten, after three
-guesses. Before I show you how, let's look at a naïve solution that takes, at
-worst, ten guesses:
+with certainty a number they've chosen, between one and one hundred, after seven
+questions. The questions will all be "Is `<number>` less than the number you've
+chosen?"  Before I show you how, let's look at a simplistic solution that takes,
+at worst, 100 guesses:
 
 ```md
 1.  Guess "1". If no,
 2.  Guess "2". If no,
 3.  Guess "3". If no,
 ...
-10.  Guess "10". You win!
+100.  Guess "100". You win!
 ```
 
 **Question:** What is the complexity of this algorithm?
 
-The algorithm that gets you there in three guess is called "binary search". It
-goes like this:
+The algorithm that gets you there in the minimum number of guesses is called a
+"binary search". It goes like this:
 
-> 1.  Divide the range in half. Guess the number in the middle. If you win,
->     great!
-> 1.  If not, the answer is either in the upper half-range or lower half-range.
-> 1.  Divide the upper or lower half-range in half, and guess the middle. Repeat
->     until done.
+1.  Divide the range in half. Ask if the number in the middle is less than
+    their chosen number.
+1.  If not, the answer is in the upper half-range. If so, it's in the lower
+    half-range.
+1.  Repeat the above steps until their are only two number left.
+1.  The final "less than" question gives you the answer.
 
-It's easiest to see in a tree diagram. Can you see the binary structure of the
-tree?
+It's relatively easy to see in a tree diagram. Can you see the binary structure
+of the tree?
+
+Would checking if the middle number is the correct answer speed things up?
+
+A binary search works with any direct access weakly ordered set (an ordered
+array with elements that may compare equal). See
+[here](https://en.wikipedia.org/wiki/Binary_search_algorithm#Procedure) for a
+more rigorous algorithm.
 
 **Question:** Explain why this algorithm is an example of divide-and-conquer in
 your own words.
