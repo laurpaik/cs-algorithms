@@ -161,12 +161,12 @@ graph](http://science.slc.edu/~jmarshall/courses/2002/spring/cs50/BigO/).
 How can you predict the complexity of a given algorithm? We can look for certain
 features to help us characterize it.
 
--   Loops take linear time to complete (`O(n)`)
+-   Loops take linear time to complete (`O(n)`).
 -   Nested loops take quadratic time to complete (`O(n^2)`), or worse, cubic
     time (`O(n^3)`)
--   For consecutive statements, add the times-to-complete
+-   For consecutive statements, add the times-to-complete.
 -   For branching statements (`if/else`), take the complexity of the worse
-    branch
+    branch.
 
 Here's a party trick that is sure to make you popular. Bet someone you can state
 with certainty a number they've chosen, between one and one hundred, after seven
@@ -206,13 +206,6 @@ more rigorous algorithm.
 
 **Question:** Explain why this algorithm is an example of divide-and-conquer in
 your own words.
-
-### Lab: Divide-and-Conquer Complexity
-
-Determine the time-complexity of the divide-and-conquer number guessing
-algorithm. Guessing and checking is OK! Work with a partner to try the algorithm
-out for numbers between one and ten, as well as numbers between one and
-one-hundred.
 
 ## Additional Resources
 
