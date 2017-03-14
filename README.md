@@ -23,8 +23,7 @@ on these topics.
 
 ## Prerequisites
 
--   [Computer Science:
-    Algorithms](https://github.com/ga-wdi-boston/cs-algorithms).
+-   [Computer Science: An introduction](https://github.com/ga-wdi-boston/cs).
 
 ## Objectives
 
