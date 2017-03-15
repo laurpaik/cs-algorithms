@@ -61,11 +61,40 @@ a sandwich?
 If Robin needed to make sandwiches for all of us, how would he do that? What's
 the "easy" or naïve way to obtain many sandwiches? What is a more efficient way?
 
+- Are we repeating these over and over? What are you limitations?
+- Are we going to make Robin do steps 1-3 over and over? lol
+- Obvi we can't do steps 1-8 over and over because sometimes it's not applicable
+
 ### Lab: Outline an Algorithm
 
 Take a few minutes to describe your morning algorithm... uh, routine. Share it
 with a neighbor. How many steps are there? How do you save time if you're in a
 rush?
+
+> 1. Snooze alarm clock (repeat multiple times)
+> 1. Wake up
+> 1. Panic over snoozed alarm (optional)
+> 1. Go to the bathroom
+> 1. "Biological needs"
+> 1. WASH HANDS
+> 1. Brush teeth
+> 1. Put in contacts
+> 1. Go back to my room
+> 1. Clothe myself
+> 1. Pack my backpack
+> 1. Put on my shoes
+> 1. Get my keys
+> 1. Check "PhoneWalletKeys"
+> 1. Exit house
+> 1. Lock house
+> 1. Drive to the T
+> 1. Take the T to Boston
+> 1. Walk to Bruegger's
+> 1. Buy a breakfast sandwich
+> 1. Walk to GA
+> 1. Eat breakfast sandwich
+> 1. Wait for Naida
+> 1. Ride elevator with Naida
 
 ### Follow Along: Sorting Cards
 
@@ -83,7 +112,14 @@ list:
 -   Quick sort
 -   Merge sort
 -   Insertion sort
+  - Look at everything, find the lowest, move it to the bottom, move everyone else down
+  - Look at everything, find the next lowest, move it next to the lowest, move everyone else down
+  - etc
+  - It's not "two" arrays like in selection sort
 -   Selection sort
+  - Get the lowest... then find the next lowest and add it... etc
+  - Remembers the last thing you looked at and compares it
+  - Pull out of the jumbled array and insert them into the ordered array
 -   Heap sort
 
 This illustrates something important about algorithms: you nearly always have a
@@ -103,11 +139,13 @@ holding cards.
 ## Big-O (Asymptotic Analysis)
 
 We use "Big-O" notation to describe an algorithm's complexity. Complexity
-measures how time needed and space required scale with input. A common
+measures how time needed and space required scale with input. (how much slower
+do things run when you have lots of things) A common
 optimization technique is to trade increased space complexity for reduced time
 complexity (and less commonly vice versa).
 
 **Question:** Why do we focus on time-complexity?
+**Time is precious, space is cheap**
 
 Take a simple algorithm for demonstration purposes: printing an element of an
 array to the screen.
@@ -117,6 +155,9 @@ array to the screen.
   puts n
 end
 ```
+- ^ Scales linearly
+- Add another thing, it does one extra step
+
 
 This procedure iterates through an array and prints each element to the screen.
 This example has three steps. If the array had five elements, five steps would
@@ -135,6 +176,7 @@ example:
   puts n
 end
 ```
+- There's a larger amount of work done, but it's not like, exponentially more work
 
 This procedure prints two lines to the screen on each iteration, for a total of
 six lines. If we had a five-item array, it would print ten items to the screen.
@@ -155,6 +197,7 @@ to become familiar with these scaling functions, and compare the table to the
 [running time
 graph](http://science.slc.edu/~jmarshall/courses/2002/spring/cs50/BigO/).
 
+- Yoo when you're doing nested `for` loops you really need to be aware of how many things you're trying to do
 ## Predicting Complexity
 
 How can you predict the complexity of a given algorithm? We can look for certain
@@ -196,6 +239,11 @@ The algorithm that gets you there in the minimum number of guesses is called a
 It's relatively easy to see in a tree diagram. Can you see the binary structure
 of the tree?
 
+It's a log(n) case! `O(log(n))`
+Prerequisites?
+- the numbers need to be comparable
+- need to be *in order*
+
 Would checking if the middle number is the correct answer speed things up?
 
 A binary search works with any direct access weakly ordered set (an ordered
@@ -205,6 +253,7 @@ more rigorous algorithm.
 
 **Question:** Explain why this algorithm is an example of divide-and-conquer in
 your own words.
+- You're literally dividing until you find what you're looking for
 
 ## Additional Resources
 
