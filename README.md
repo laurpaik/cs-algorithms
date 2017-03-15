@@ -112,14 +112,14 @@ list:
 -   Quick sort
 -   Merge sort
 -   Insertion sort
-  - Look at everything, find the lowest, move it to the bottom, move everyone else down
-  - Look at everything, find the next lowest, move it next to the lowest, move everyone else down
-  - etc
-  - It's not "two" arrays like in selection sort
+  > - Look at everything, find the lowest, move it to the bottom, move everyone else down
+  > - Look at everything, find the next lowest, move it next to the lowest, move everyone else down
+  > - etc
+  > - It's not "two" arrays like in selection sort
 -   Selection sort
-  - Get the lowest... then find the next lowest and add it... etc
-  - Remembers the last thing you looked at and compares it
-  - Pull out of the jumbled array and insert them into the ordered array
+  > - Get the lowest... then find the next lowest and add it... etc
+  > - Remembers the last thing you looked at and compares it
+  > - Pull out of the jumbled array and insert them into the ordered array
 -   Heap sort
 
 This illustrates something important about algorithms: you nearly always have a
